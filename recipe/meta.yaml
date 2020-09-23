@@ -40,7 +40,6 @@ requirements:
 test:
   imports:
     - py4DSTEM
-    - py4DSTEM.file
   commands:
     - pip check
   requires:
