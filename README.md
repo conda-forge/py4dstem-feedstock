@@ -5,9 +5,13 @@ Home: https://github.com/py4dstem/py4DSTEM/
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/py4dstem-feedstock/blob/master/LICENSE.txt)
 
 Summary: An open source python package for processing and analysis of 4D STEM data.
+
+Development: https://github.com/py4dstem/py4DSTEM
+
+Documentation: https://github.com/py4dstem/py4DSTEM
 
 py4DSTEM is a python tool for analysis of four-dimensional scanning
 transimission electron microscopy (4D-STEM) data.
