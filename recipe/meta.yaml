@@ -22,20 +22,20 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - h5py >=2.10.0
+    - h5py =2.10.0
     - ipywidgets
     - ncempy >=1.6.0
-    - numba >=0.49.1
-    - numpy >=1.15
+    - numba =0.49.1
+    - numpy =1.19
     - pymatgen
-    - pyqt >=5.9
-    - pyqtgraph >=0.10
+    - pyqt =5.13
+    - pyqtgraph =0.11
     - python >=3.6
-    - qtconsole >=4.4
-    - scikit-image >=0.16.2
-    - scikit-learn >=0.22.1
-    - scipy >=1.1
-    - tqdm
+    - qtconsole =4.7.7
+    - scikit-image =0.17.2
+    - scikit-learn =0.23.2
+    - scipy =1.5.2
+    - tqdm =4.46.1
 
 test:
   imports:
