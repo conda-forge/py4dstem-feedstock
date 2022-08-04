@@ -1,5 +1,5 @@
 {% set name = "py4dstem" %}
-{% set version = "0.13.5" %}
+{% set version = "0.13.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/py4DSTEM/py4DSTEM-{{ version }}.tar.gz
-  sha256: 1101afd35e4316379b2002c3f6dd104b289b5d3a9159e52941a2090dfc8a1d1c
+  sha256: 14c9bb1072f8dbab6948c72fda069d3cd6825c67f1332c5accbcb20d35f3c0af
 
 build:
   number: 0
