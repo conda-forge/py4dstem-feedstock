@@ -1,11 +1,11 @@
-About py4dstem
-==============
+About py4dstem-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/py4dstem-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/py4dstem/py4DSTEM/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/py4dstem-feedstock/blob/main/LICENSE.txt)
 
 Summary: An open source python package for processing and analysis of 4D STEM data.
 
