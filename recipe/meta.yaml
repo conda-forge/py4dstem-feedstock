@@ -11,7 +11,7 @@ source:
   sha256: ba60fe6564dd171d782a83a4f2d1ed190668142b221fdca9f237ac3fbfdb8dcd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - py4DSTEM=py4DSTEM.gui.runGUI:launch
@@ -37,7 +37,7 @@ requirements:
     - tqdm >=4.46.1
     - dill >=0.3.3
     - gdown >=4.4.0
-    - dask >=2.3.0
+    - dask-core >=2.3.0
     - distributed >=2.3.0
 
 test:
