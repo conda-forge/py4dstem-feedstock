@@ -1,5 +1,5 @@
 {% set name = "py4dstem" %}
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/py4DSTEM/py4DSTEM-{{ version }}.tar.gz
-  sha256: 3e15829498410dcd6e896547dea3b087c831aec67bf76551f79ebe181b01a417
+  sha256: a401f98b113414401354ea8721787ba4494052c50d335775e33829205b796f65
 
 build:
   number: 0
@@ -20,9 +20,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python <3.11,>=3.9
   run:
-    - python >=3.8
+    - python <3.11,>=3.9
     - numpy >=1.19
     - scipy >=1.5.2
     - h5py >=3.2.0
@@ -39,6 +39,7 @@ requirements:
     - gdown >=4.4.0
     - dask-core >=2.3.0
     - distributed >=2.3.0
+    - emdfile
 
 test:
   imports:
