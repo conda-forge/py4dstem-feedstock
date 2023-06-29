@@ -39,7 +39,7 @@ requirements:
     - gdown >=4.4.0
     - dask-core >=2.3.0
     - distributed >=2.3.0
-    - emdfile
+    - emdfile =0.0.8
 
 test:
   imports:
