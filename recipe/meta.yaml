@@ -38,6 +38,7 @@ requirements:
     - dask-core >=2.3.0
     - distributed >=2.3.0
     - emdfile >=0.0.11
+    - mpire
 
 test:
   imports:
