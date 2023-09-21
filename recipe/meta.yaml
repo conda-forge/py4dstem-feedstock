@@ -1,5 +1,5 @@
 {% set name = "py4dstem" %}
-{% set version = "0.14.3" %}
+{% set version = "0.14.4" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/py4DSTEM/py4DSTEM-{{ version }}.tar.gz
-  sha256: 603b32ee52f308d824d09b2577d87bba50d821eb616fe6d841b2ad12d9781d61
+  sha256: f379042fb38174e6c6cb7d752e18992efb0c2b923d7014914d9c13d706749d8b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - py4DSTEM=py4DSTEM.gui.runGUI:launch
@@ -38,6 +38,7 @@ requirements:
     - dask-core >=2.3.0
     - distributed >=2.3.0
     - emdfile >=0.0.11
+    - mpire
 
 test:
   imports:
