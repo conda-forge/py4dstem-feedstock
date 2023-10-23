@@ -1,5 +1,5 @@
 {% set name = "py4dstem" %}
-{% set version = "0.14.4" %}
+{% set version = "0.14.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/py4DSTEM/py4DSTEM-{{ version }}.tar.gz
-  sha256: f379042fb38174e6c6cb7d752e18992efb0c2b923d7014914d9c13d706749d8b
+  sha256: 30b241e50802f3cf5ce5cc0ee856bcc85e90ecbfd449bdc9b701a00108044268
 
 build:
   number: 0
@@ -39,6 +39,8 @@ requirements:
     - distributed >=2.3.0
     - emdfile >=0.0.11
     - mpire
+    - colorspacious
+    - pylops
 
 test:
   imports:
