@@ -1,5 +1,5 @@
 {% set name = "py4dstem" %}
-{% set version = "0.14.14" %}
+{% set version = "0.14.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/py4DSTEM-{{ version }}.tar.gz
-  sha256: bbbf2f0b09fecd1aa66c615d323d87829fef004b70f9c2c98386f0bea32da93f
+  sha256: 321fcd852397e40b1f7cb67ec34035960a32f09477b50da31b798f90f5d65552
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - ncempy >=1.8.1
     - matplotlib-base >=3.2.2
     - scikit-image >=0.17.2
-    - scikit-learn >=0.23.2
+    - scikit-learn >=0.23.2, <1.5
     - scikit-optimize >=0.9.0
     - tqdm >=4.46.1
     - dill >=0.3.3
