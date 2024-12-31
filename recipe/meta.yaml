@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "py4DSTEM" %}
 {% set version = "0.14.17" %}
 
@@ -6,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: c23982a4c14fca7ea48ad877ede40e024f47512bc5984d787fe00f8dc11c85b5
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy >=1.19,<2.0
     - scipy >=1.5.2
     - h5py >=3.2.0
@@ -48,6 +49,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/py4dstem/py4DSTEM/
