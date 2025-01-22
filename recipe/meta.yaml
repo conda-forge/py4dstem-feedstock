@@ -1,19 +1,19 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "py4DSTEM" %}
-{% set version = "0.14.17" %}
+{% set version = "0.14.18" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c23982a4c14fca7ea48ad877ede40e024f47512bc5984d787fe00f8dc11c85b5
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
+  sha256: 9bedee5994582b3a9483e931358fa2672a50bd4f940b802cefd83780d5f8f9df
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
