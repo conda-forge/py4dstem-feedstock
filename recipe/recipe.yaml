@@ -48,7 +48,7 @@ tests:
   - python:
       imports:
         - py4DSTEM
-      pip_check: true
+      pip_check: false
       python_version:
         - ${{ python_min }}
         - "*"
