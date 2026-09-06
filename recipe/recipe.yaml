@@ -1,7 +1,6 @@
 schema_version: 1
 
 context:
-  python_min: "3.10"
   name: py4DSTEM
   version: "0.14.18"
 
@@ -20,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python 3.10.*
+    - python ${{ python_min }}.*
     - pip
     - setuptools
   run:
@@ -50,7 +49,9 @@ tests:
       imports:
         - py4DSTEM
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: An open source python package for processing and analysis of 4D STEM data.
